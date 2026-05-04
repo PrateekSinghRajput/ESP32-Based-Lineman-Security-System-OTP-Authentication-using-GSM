@@ -5,24 +5,24 @@ An advanced IoT-based security solution designed for electrical linemen to preve
 ---
 
 ### 🚀 Key Features
-* **OTP-Based Authentication**: Generates a unique 4-digit One-Time Password for every access request [cite: 1].
-* **GSM Connectivity**: Uses SIM800L to send OTPs directly to the supervisor's or lineman's mobile device [cite: 1].
-* **Local UI & Feedback**: 16x2 LCD for status messages and a buzzer for audible confirmation/warnings [cite: 1].
-* **Secure Control**: Industrial-grade relay module to manage power state (Lock/Unlock) [cite: 1].
-* **Robust Input**: 4x4 Matrix Keypad for manual OTP entry [cite: 1].
+* **OTP-Based Authentication**: Generates a unique 4-digit One-Time Password for every access request.
+* **GSM Connectivity**: Uses SIM800L to send OTPs directly to the supervisor's or lineman's mobile device .
+* **Local UI & Feedback**: 16x2 LCD for status messages and a buzzer for audible confirmation/warnings .
+* **Secure Control**: Industrial-grade relay module to manage power state (Lock/Unlock).
+* **Robust Input**: 4x4 Matrix Keypad for manual OTP entry.
 
 ---
 
 ### 🛠️ Hardware Components
 | Component | Description |
 | :--- | :--- |
-| **ESP32** | The brain of the system, handling logic and communication [cite: 1]. |
-| **SIM800L GSM Module** | Handles SMS transmission and reception [cite: 1]. |
-| **16x2 LCD (I2C)** | Displays system states (e.g., "SYSTEM LOCKED", "ENTER OTP") [cite: 1]. |
-| **4x4 Keypad** | Used for user input of the OTP [cite: 1]. |
-| **5V Relay Module** | Controls the electrical load/line connection [cite: 1]. |
-| **Buzzer** | Provides audio alerts for success or failure [cite: 1]. |
-| **Li-ion Battery** | Power source for portability and reliability [cite: 1]. |
+| **ESP32** | The brain of the system, handling logic and communication. |
+| **SIM800L GSM Module** | Handles SMS transmission and reception. |
+| **16x2 LCD (I2C)** | Displays system states (e.g., "SYSTEM LOCKED", "ENTER OTP").|
+| **4x4 Keypad** | Used for user input of the OTP. |
+| **5V Relay Module** | Controls the electrical load/line connection. |
+| **Buzzer** | Provides audio alerts for success or failure. |
+| **Li-ion Battery** | Power source for portability and reliability . |
 
 ---
 
@@ -39,11 +39,11 @@ An advanced IoT-based security solution designed for electrical linemen to preve
 ---
 
 ### 📖 Workflow
-1.  **System Idle**: The LCD displays the current status (LOCK/UNLOCK) [cite: 1].
-2.  **Request**: The user initiates an action. The ESP32 generates a random OTP [cite: 1].
-3.  **Transmission**: The SIM800L sends the OTP to the registered mobile number [cite: 1].
-4.  **Verification**: The user enters the received OTP on the keypad [cite: 1].
-5.  **Action**: If the OTP matches, the relay toggles the power state and the buzzer sounds [cite: 1].
+1.  **System Idle**: The LCD displays the current status (LOCK/UNLOCK).
+2.  **Request**: The user initiates an action. The ESP32 generates a random OTP.
+3.  **Transmission**: The SIM800L sends the OTP to the registered mobile number.
+4.  **Verification**: The user enters the received OTP on the keypad .
+5.  **Action**: If the OTP matches, the relay toggles the power state and the buzzer sounds.
 
 ---
 
